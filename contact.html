@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Famille Royal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <ul id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="famille.html">Famille Royale</a></li>
+        <li><a href="calendrier.html">Calendrier Evènements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div id="contact">
+        <form method="post" action="traitement.html">
+            <p>
+                <label for="nom">
+                    Nom
+                </label>
+                <input type="text" name="nom" />
+                <br /> <br />
+                <label for="prenon">
+                    Prénom
+                </label>
+                <input type="text" name="prenom" />
+                <br /> <br />
+                <label for="mail">
+                    Mail
+                </label>
+                <input type="mail" name="mail" />
+                <br /> <br />
+                <label for="message">
+                    Message
+                </label>
+                <textarea name="message"></textarea>
+            </p>
+        </form>
+    </div>
+    <div class="button_container">
+        <button id="button_modal" onclick="openModal()">
+            Valider
+        </button>
+    </div>
+    <div id="modal">
+        <h4>MESSAGE ENVOYÉ</h4>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
